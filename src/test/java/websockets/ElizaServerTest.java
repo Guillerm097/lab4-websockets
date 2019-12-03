@@ -64,7 +64,7 @@ public class ElizaServerTest {
 		session.getAsyncRemote().sendText("I think my family will always supports me");
 		latch.await();
 		assertEquals(5, list.size());
-		// Always keyword first match -> Can you think of a specific example
+		// 'Always' keyword first match -> Can you think of a specific example
 		assertEquals("Can you think of a specific example?", list.get(3));
 	}
 
